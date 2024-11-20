@@ -1,0 +1,65 @@
+.extra-feature {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.content .tagline {
+  color: #6941c6;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.content .heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.content .description {
+  color: #6b7280;
+  margin: 0 auto 2rem;
+  max-width: 600px;
+}
+
+.image-container {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  width: 100%;
+  max-width: 768px;
+  height: auto;
+}
+
+.iphone-image {
+  display: block;
+  width: 100%;
+  max-width: 244px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.screen-image {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .iphone-image {
+    position: absolute;
+    top: 14%;
+    left: -10%;
+    z-index: 10;
+  }
+
+  .screen-image {
+    display: block;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .iphone-image {
+    width: 30%;
+  }
+}
